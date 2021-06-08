@@ -66,6 +66,12 @@ body {
   padding-top: 2.2rem;
 }
 
+@media (max-width: 425px) {
+  .header-main .navbar-brand {
+    width: 220px;
+  }
+}
+
 .header-main .slider {
   padding: 0 15px;
   height: 80vh;
