@@ -45,7 +45,7 @@ body {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  padding: 50px;
+  padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,8 +128,8 @@ body {
   -ms-flex-preferred-size: 350px;
       flex-basis: 350px;
   background: #FFFDFD;
-  -webkit-box-shadow: 0px 4px 5px #0000002e;
-          box-shadow: 0px 4px 5px #0000002e;
+  -webkit-box-shadow: 0px 1px 5px #0000002e;
+          box-shadow: 0px 1px 5px #0000002e;
 }
 
 .form-theme {
@@ -172,22 +172,32 @@ body {
 
 .form-theme label .form-theme-control::-webkit-input-placeholder {
   text-align: center;
+  color: #afaeae;
 }
 
 .form-theme label .form-theme-control:-ms-input-placeholder {
   text-align: center;
+  color: #afaeae;
 }
 
 .form-theme label .form-theme-control::-ms-input-placeholder {
   text-align: center;
+  color: #afaeae;
 }
 
 .form-theme label .form-theme-control::placeholder {
   text-align: center;
+  color: #afaeae;
 }
 
 .form-theme label .form-theme-control:focus ~ .icon {
   color: #00B879;
+}
+
+.form-theme label .form-theme-control:focus {
+  border: 1px solid #00B879;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .form-theme label .icon {
@@ -254,7 +264,7 @@ body {
   background: url(../images/banner/1.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: 124% -31px;
 }
 
 @media (max-width: 768px) {
