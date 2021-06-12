@@ -236,19 +236,21 @@ body {
 
 @media (max-width: 768px) {
   .dashboard .leftBar {
-    position: absolute;
+    position: fixed;
     background: #fff;
     z-index: 1000;
     left: -280px;
+    top: 0;
+    bottom: 0;
   }
   .dashboard .leftBar .slide {
     display: block;
     position: absolute;
-    right: -51px;
-    top: 20px;
+    right: -43px;
+    top: 181px;
     color: #ffffff;
     background: #4c4c4c;
-    padding: 7px;
+    padding: 2px;
     border-radius: 0 10px 10px 0;
   }
   .dashboard .leftBar .slide .iconify {
@@ -315,7 +317,8 @@ body {
 
 @media (max-width: 600px) {
   .dashboard .rightBar {
-    padding: 30px;
+    padding-left: 47px;
+    padding-right: 30px;
   }
 }
 

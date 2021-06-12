@@ -193,18 +193,20 @@ $white:#fff;
     }
      
      @media(max-width:768px){
-      position: absolute;
+      position: fixed;
       background: #fff;
       z-index: 1000;
       left: -280px;
+      top: 0;
+      bottom: 0;
       .slide{
         display: block;
         position: absolute;
-        right: -51px; 
-        top: 20px;
+        right: -43px;
+        top: 181px;
         color: #ffffff;
         background: #4c4c4c;
-        padding: 7px;
+        padding: 2px;
         border-radius: 0 10px 10px 0;
         .iconify{
           font-size: 38px;
@@ -262,7 +264,8 @@ $white:#fff;
      flex: 1;
      padding: 50px;
      @media(max-width:600px){
-       padding: 30px;
+      padding-left: 47px;
+      padding-right: 30px;
      }
    }
 }
