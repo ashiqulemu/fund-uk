@@ -8,3 +8,9 @@
    console.log(event.target.classList.toggle('active'))
  
  }
+
+
+ function slide(){
+     let sidebar  = document.getElementById('sidebar');
+         sidebar.classList.toggle('active');
+ }
