@@ -789,12 +789,11 @@ margin-top: 17px;
           margin-top: 4px;
           display: flex;
           justify-content: space-between;
-          @media(max-width:768px){
+          @media(max-width:1024px){
             flex-direction: column;
           }
           .item{
-            display: flex;
-            flex-wrap: wrap;
+            display: flex; 
             flex: 1;
             align-items: center;
             .btn-theme{
