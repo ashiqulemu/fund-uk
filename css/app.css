@@ -1056,4 +1056,196 @@ footer .social a:nth-child(5) {
 .nav-tabs li .nav-link.active {
   color: #00B879;
 }
+
+.donation {
+  background-color: #fff;
+  border-radius: .25rem;
+  -webkit-box-shadow: 0 16px 24px #00000012;
+          box-shadow: 0 16px 24px #00000012;
+  padding: 2rem 3rem 3rem;
+}
+
+.card-with-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-with-text .item {
+  -ms-flex-preferred-size: 160px;
+      flex-basis: 160px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #4D4D4D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-with-text .item img {
+  width: 100%;
+}
+
+.card-with-text .item:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.donateAmmount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid lightgrey;
+  padding: 9px 20px;
+  border-radius: 7px;
+}
+
+.donateAmmount .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.donateAmmount input {
+  width: 100%;
+  text-align: right;
+  border: 0;
+  outline: 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.donateAmmount input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.donateAmmount input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.donateAmmount .last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.p-checkout-summary {
+  background-color: #fff;
+  border-radius: .25rem;
+  -webkit-box-shadow: 0 16px 24px #00000012;
+          box-shadow: 0 16px 24px #00000012;
+  padding: 2rem 1.5rem;
+}
+
+.p-checkout-summary .items {
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.9;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+}
+
+.p-checkout-summary .items span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #767676 !important;
+}
+
+.p-checkout-summary .items span:last-child {
+  text-align: right;
+}
+
+.hrt-styled-button {
+  border-color: #ddd;
+  color: #333;
+  border: 1px solid #02a95c;
+  color: #02a95c;
+  font-weight: 900;
+  letter-spacing: .02em;
+  border-radius: .25rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1rem;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  line-height: 1.5;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.hrt-styled-button:hover {
+  background: #00B879;
+  color: #fff;
+}
 /*# sourceMappingURL=app.css.map */
