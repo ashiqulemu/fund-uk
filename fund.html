@@ -82,17 +82,96 @@
                             <span> 0% &nbsp; </span> <input type="range" min="1" max="25" value="10" class="slider"
                                 id="myRange"> &nbsp; <span> 25%</span>
                         </div>
-                        <a href='' class='btn btn-theme'>Continue</a> <br>
+                        <button onclick="donate();" class='btn btn-theme' id='continue'>Continue</button> <br>
+                        <div class="donatearea p-3 border rounded my-4" id="donation">
+                                <div class="d-flex align-items-center flex-wrap justify-content-between">
+                                    <div class='paymentLabel'>Use credit or debit card</div>
+                                    <div class="payment">
+                                        <span class="iconify" data-icon="bx:bxl-visa" data-inline="false"></span>
+                                        <span class="iconify" data-icon="fa:cc-discover" data-inline="false"></span>
+                                        <span class="iconify" data-icon="bx:bxl-mastercard" data-inline="false"></span>
+                                        <span class="iconify" data-icon="cib:american-express" data-inline="false"></span>
+                                    </div>
+                                </div>
+                                <form action="" class="mt-4">
+                                    <div class="form-group">
+                                        <div class="form-item">
+                                            <label for=""> Email </label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-item">
+                                            <label for="">First name </label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-item">
+                                            <label for=""> Last name </label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-item"> 
+                                            <input type="checkbox" id="bill" class="form-control">
+                                            <label for="bill">Use  billing name </label> 
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-gap-adjust" >
+                                        <div class="form-item" > 
+                                            <input type="number" placeholder="Card number" class="form-control">
+                                        </div>
+                                        <div class="form-item"> 
+                                            <input type="number" placeholder="MM/YY" class="form-control">
+                                        </div>
+                                        <div class="form-item"> 
+                                            <input type="number" placeholder="CVV" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-item">
+                                            <label for=""> Name on card </label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-item">
+                                            <label for="">Country</label> 
+                                            <select name="" id="" class="form-control">
+                                                <option value="">country 1</option>
+                                                <option value="">country 1</option>
+                                                <option value="">country 1</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-item">
+                                            <label for=""> Postal code</label>
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-item"> 
+                                            <label class=""><b>Donation Details </b></label> <br>
+                                            <input type="checkbox" class="font-weight-bold" class="form-control">
+                                            <small>  Don't display my name publicly on the campaign.</small>  <br>
+                                            <input type="checkbox" class="font-weight-bold" class="form-control">
+                                            <small>  Get occasional marketing updates from GoFundMe. You may unsubscribe at any time.</small> 
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <button class="btn btn-theme">Donate Now</button>
+                                </form>
+                        </div>
                         <small class="text-muted mt-4">This site is protected by reCAPTCHA and the Google privacy policy and
                             Terms of
-                            Service apply.</small>
+                            Service apply.
+                        </small>
                         <hr>
                         <section class="m-value-prop">
                             <div class="m-value-prop-content">
                                 <h6>GoFundMe Guarantee</h6>
                                 <small class="text-muted">In the rare case something isn't right, we will
                                     work with you to determine if misuse has occurred.
-                                    <a href=" " target="_blank">Learn more.</a>
+                                    <a href="" target="_blank">Learn more.</a>
                                 </small>
                             </div>
                         </section>

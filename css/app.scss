@@ -91,8 +91,7 @@ $white:#fff;
     display: inline-block;
     }
     .form-control{
-      outline: 0;
-      min-width: 189px;
+      outline: 0; 
       &:hover{
         border: 1px solid #00B879;
         -webkit-box-shadow: none;
@@ -849,6 +848,9 @@ margin-top: 17px;
   border-radius: .25rem;
   box-shadow: 0 16px 24px #00000012;
   padding: 2rem 3rem 3rem;
+  @media(max-width:768px){
+    padding:2rem;
+  }
 }
 .card-with-text{ 
   display: flex;
@@ -880,7 +882,9 @@ margin-top: 17px;
     align-items: center;
     font-size: 1.3rem;
     font-weight: bold;
- 
+    @media(max-width:768px){
+      font-size:0.8rem;
+    }
     }
     
     input{
@@ -890,13 +894,9 @@ margin-top: 17px;
       outline: 0;
       font-size: 3rem;
       font-weight: bold;
-      &::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-         margin: 0;
-      }
-      &::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-         margin: 0;
+      
+      @media(max-width:768px){
+        font-size:1rem;
       }
     }
 
@@ -906,7 +906,9 @@ margin-top: 17px;
       justify-content: center;
       font-size: 3rem;
       font-weight: bold;
-         
+      @media(max-width:768px){
+        font-size:1rem;
+      }
     } 
     
 }
@@ -985,4 +987,35 @@ margin-top: 17px;
       background:$primary;
       color:$white;
     }
+}
+
+.donatearea{
+  .payment{
+    svg.iconify{
+      font-size: 1.9rem !important;
+    color: #6f6c73;
+    margin: 0 9px;
+       @media (max-width:768px) {
+        font-size: 1.5rem !important;
+       }
+    }
+  }
+  display: none;
+  &.active{
+    display: block;
+  }
+}
+.col-gap-adjust{
+   column-gap: 2px;
+   flex-wrap: nowrap;
+   
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+   margin: 0;
+}
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+   margin: 0;
 }

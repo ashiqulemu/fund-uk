@@ -14,3 +14,9 @@
      let sidebar  = document.getElementById('sidebar');
          sidebar.classList.toggle('active');
  }
+
+ function donate(){
+     let donation  = document.getElementById('donation');
+      document.getElementById('continue').style.display="none";
+         donation.classList.toggle('active');
+ }
