@@ -131,7 +131,6 @@ body {
 
 .user-form {
   max-width: 800px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,8 +228,8 @@ body {
 }
 
 .dashboard .leftBar {
-  -ms-flex-preferred-size: 340px;
-      flex-basis: 340px;
+  -ms-flex-preferred-size: 270px;
+      flex-basis: 270px;
   border-right: 1px solid #efefef;
   padding: 50px;
   -webkit-transition: left 0.4s ease-in-out;
@@ -701,6 +700,10 @@ body {
   cursor: pointer;
   font-size: 24px;
   cursor: pointer;
+}
+
+.funded .fund-items .box .info .impression svg path {
+  color: #e6e6e6;
 }
 
 .funded .fund-items .box .info .impression svg path.active {
