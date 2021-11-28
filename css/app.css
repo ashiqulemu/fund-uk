@@ -228,8 +228,8 @@ body {
 }
 
 .dashboard .leftBar {
-  -ms-flex-preferred-size: 270px;
-      flex-basis: 270px;
+  -ms-flex-preferred-size: 285px;
+      flex-basis: 285px;
   border-right: 1px solid #efefef;
   padding: 50px;
   -webkit-transition: left 0.4s ease-in-out;
