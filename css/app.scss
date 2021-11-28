@@ -461,6 +461,7 @@ $white:#fff;
 }
 
 .progress{
+  height: 1.3rem;
   border-radius: 0 10px 10px 0;
   background: #fff;
   .progress-bar{
@@ -515,31 +516,44 @@ $white:#fff;
   .fund-items{
     margin-top: 50px;
     .box{
-      background:#F7F7F7;
-      margin-bottom: 25px;
-       
+      border-radius: 10px; 
+      background:#F5FCF9;
+      margin-bottom: 80px;
+       position: relative;
+       .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
       .photo{
-        height: 240px;
-        background:lightgrey;
+        height: 125px;
+        background: #F5FCF9;
         display: flex;
         align-items: center;
         justify-content: center;
-        background:url('../images/noise_highlight.png');
+        flex: 1;
+        // background:url('../images/noise_highlight.png');
         .profile{
-          width:170px;
-          height:170px;
-          border-radius: 50%; 
-          box-shadow: 1px 6px 20px #00000030;
-
+          width: 153px;
+          height: 153px;
+          position: absolute;
+          border-radius: 50%;
+          left: -20px;
+          top: -20px;
+          @media(max-width:375px){
+            width: 135px;
+            height: 135px;
+          }
         }
       }
-      .info{
-        padding: 18px;
+      .toper {
+        flex: 2;
+        padding-left: 25px;
         position: relative;
         .impression{
           position: absolute;
           right: 24px;
-          top: 24px;  
+          bottom: 0; 
           svg{
             cursor: pointer;
             font-size: 24px;
@@ -555,35 +569,45 @@ $white:#fff;
            
         }
         .uname{
-          text-transform: capitalize;
-          color: $theme;
-          font-size: 18px;
+          text-transform: capitalize; 
+          color: #070707;
+          font-size: 16px;
         }
         .user-with-versity{
           font-size: 13px;
           color: #888888;
           span{
             &:nth-child(1){
-
+              text-transform: uppercase;
+              color :#070707; 
             }
-            &:nth-child(2){}
+            &:nth-child(2){
+              text-transform: capitalize;
+              color :#070707; 
+            }
           }
         }
         .tag  {
           font-size: 14px;
            color: $theme;
         }
+      }
+      .info{ 
+        position: relative;
+       
         .desc {
-          font-size: 14px;
-  color: #8e8b8b;
-  margin-top: 17px;
+          font-size: 15px;
+          color: #070707;
+          margin-top: 7px;
+          line-height: 1.6;
         }
         .fund-details{
-          background: #F1F1F1;
+          background: #EBF9F3;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           padding: 14px;
+          border-radius: 0 0 10px 10px;
           margin-top: 15px;
           .items{
             flex:1;
@@ -591,17 +615,18 @@ $white:#fff;
             flex-direction: column;
             align-items: center; 
             &:nth-child(2){
-              border-left: 1px solid lightgrey;
-              border-right: 1px solid lightgrey;
+              border-left: 1px solid #B6BEBB;
+              border-right: 1px solid #B6BEBB;
             }
               h4{
                 color: $black;
                 font-size: 1.1rem;
+                font-weight: bold;
               }
                 
               h5{
                 font-size: 1.05rem;
-                color:#9c9c9c;
+                color:#080808;
               }
             }
           }
