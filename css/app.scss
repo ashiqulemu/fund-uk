@@ -544,6 +544,10 @@ $white:#fff;
             width: 135px;
             height: 135px;
           }
+          @media(max-width:1024px){
+            width:120px;
+            height:120px;
+          }
         }
       }
       .toper {
