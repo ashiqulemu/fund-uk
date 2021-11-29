@@ -24,6 +24,38 @@ body {
   font-family: fund;
 }
 
+.nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-item a {
+  margin-right: 25px;
+  color: #000 !important;
+}
+
+.nav-item a:hover {
+  color: #00B879 !important;
+}
+
+.nav-item .btn-theme {
+  padding: 9px 18px !important;
+  background: #00B879;
+  color: #fff !important;
+  border-radius: 12px;
+  margin: 10px 10px 10px 0;
+  text-decoration: none;
+}
+
+.nav-item .btn-theme:hover {
+  background: #00d28a;
+  color: #000 !important;
+}
+
 .txt-theme {
   color: #4D4D4D;
 }
@@ -33,7 +65,7 @@ body {
   background: #00B879;
   color: #fff !important;
   border-radius: 12px;
-  margin: 6px 10px;
+  margin: 10px 10px 10px 0;
   text-decoration: none;
 }
 
@@ -117,7 +149,8 @@ body {
   box-shadow: none;
 }
 
-.form-group .form-item input[type='radio'], .form-group .form-item input[type='checkbox'] {
+.form-group .form-item input[type='radio'],
+.form-group .form-item input[type='checkbox'] {
   height: 20px;
   margin-right: 8px;
   width: 20px;
@@ -556,7 +589,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   opacity: 1;
-  background: url(../images/banner/1.jpg);
+  background: #F5FDFB url("../images/banner/1.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 124% -31px;
@@ -618,14 +651,20 @@ body {
 .funded .search-panel {
   position: relative;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.funded .search-panel::before {
-  content: '\1F50D';
-  position: absolute;
-  z-index: 1;
-  top: 9px;
-  left: 11px;
+.funded .search-panel button {
+  -webkit-transform: translateX(-18px);
+          transform: translateX(-18px);
 }
 
 .funded .search-panel .user-search {
@@ -655,7 +694,7 @@ body {
 }
 
 .funded .fund-items {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .funded .fund-items .box {
@@ -825,7 +864,7 @@ body {
 
 footer {
   padding: 50px 0;
-  border-top: 1px solid #D1D1D1;
+  background: #F5FCF9;
 }
 
 @media (max-width: 768px) {
@@ -836,7 +875,7 @@ footer {
 
 footer .footer-block .copyright {
   margin-top: 60px;
-  color: #888888;
+  color: #000;
   margin-left: 7px;
   font-size: 15px;
 }
@@ -872,7 +911,7 @@ footer .links li {
 footer .links li a {
   text-decoration: none;
   text-transform: capitalize;
-  color: #4D4D4D;
+  color: #000;
 }
 
 footer .links li a:hover {
