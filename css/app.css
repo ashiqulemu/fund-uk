@@ -24,6 +24,37 @@ body {
   font-family: fund;
 }
 
+.addFile {
+  position: relative;
+}
+
+.addFile .profile-upload {
+  width: 0;
+}
+
+.addFile .profile-upload:after {
+  content: url("../images/file-upload.png");
+  position: absolute;
+  height: 33px;
+  width: 93px;
+  top: 0;
+  background-color: #4eb879;
+  left: 0;
+  z-index: 1;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+}
+
 .nav-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,11 +335,42 @@ body {
   }
 }
 
+.dashboard .leftBar .sideMenu {
+  position: relative;
+}
+
 .dashboard .leftBar .sideMenu p {
   text-transform: capitalize;
   color: #50a070;
   margin-bottom: 0.4rem;
   font-size: 17px;
+}
+
+.dashboard .leftBar .sideMenu .profile-upload {
+  width: 0;
+}
+
+.dashboard .leftBar .sideMenu .profile-upload:after {
+  content: url("../images/camera.png");
+  position: absolute;
+  height: 33px;
+  width: 33px;
+  top: 50px;
+  background-color: #4eb879;
+  right: 35px;
+  z-index: 1;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
 }
 
 .dashboard .leftBar .sideMenu .menu-items {
