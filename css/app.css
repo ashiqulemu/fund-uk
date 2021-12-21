@@ -1469,4 +1469,12 @@ input::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.othersCollaps input {
+  display: none;
+}
+
+#others:checked + label.othersCollaps input {
+  display: block;
+}
 /*# sourceMappingURL=app.css.map */

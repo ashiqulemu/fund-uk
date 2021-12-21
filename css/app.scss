@@ -33,8 +33,9 @@ $white:#fff;
 
 // button classes
 
-.addFile{
+.addFile {
   position: relative;
+
   .profile-upload {
     width: 0;
 
@@ -57,7 +58,7 @@ $white:#fff;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      cursor: pointer; 
+      cursor: pointer;
       color: #fff;
     }
   }
@@ -302,16 +303,18 @@ $white:#fff;
       }
     }
 
-   
+
 
     .sideMenu {
       position: relative;
+
       p {
         text-transform: capitalize;
         color: #50a070;
         margin-bottom: 0.4rem;
         font-size: 17px;
       }
+
       .profile-upload {
         width: 0;
 
@@ -334,7 +337,7 @@ $white:#fff;
           -webkit-box-pack: center;
           -ms-flex-pack: center;
           justify-content: center;
-          cursor: pointer; 
+          cursor: pointer;
           color: #fff;
         }
       }
@@ -710,7 +713,7 @@ $white:#fff;
           left: -20px;
           top: -20px;
 
-         
+
           @media(max-width:375px) {
             width: 135px;
             height: 135px;
@@ -1301,4 +1304,23 @@ input::-webkit-inner-spin-button {
 input::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+
+
+ .othersCollaps{
+  input {
+    display: none;
+  }
+}
+
+#others {
+
+
+  &:checked+label.othersCollaps {
+    input {
+      display: block;
+    }
+  }
+
 }
