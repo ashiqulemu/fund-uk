@@ -828,8 +828,8 @@ body {
 
 .funded .fund-items .box .toper .impression {
   position: absolute;
-  right: 24px;
-  bottom: 0;
+  right: 17px;
+  top: 50px;
 }
 
 .funded .fund-items .box .toper .impression svg {
@@ -870,6 +870,8 @@ body {
 .funded .fund-items .box .toper .tag {
   font-size: 14px;
   color: #4D4D4D;
+  width: calc(100% - 50px);
+  word-break: break-word;
 }
 
 .funded .fund-items .box .info {

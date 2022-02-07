@@ -733,8 +733,8 @@ $white:#fff;
 
         .impression {
           position: absolute;
-          right: 24px;
-          bottom: 0;
+          right: 17px;
+          top: 50px;
 
           svg {
             cursor: pointer;
@@ -778,7 +778,9 @@ $white:#fff;
 
         .tag {
           font-size: 14px;
-          color: $theme;
+          color: #4D4D4D;
+          width: calc(100% - 50px);
+          word-break: break-word; 
         }
       }
 
@@ -1308,7 +1310,7 @@ input::-webkit-outer-spin-button {
 
 
 
- .othersCollaps{
+.othersCollaps {
   input {
     display: none;
   }
