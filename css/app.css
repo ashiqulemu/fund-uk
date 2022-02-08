@@ -1479,4 +1479,70 @@ input::-webkit-outer-spin-button {
 #others:checked + label.othersCollaps input {
   display: block;
 }
+
+.table-custom {
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.table-custom thead {
+  vertical-align: bottom;
+}
+
+.table-custom thead tr {
+  background-color: #d8ede4;
+}
+
+.table-custom thead tr th, .table-custom thead tr td {
+  vertical-align: middle;
+  border: 0;
+  text-transform: capitalize;
+  font-size: 15px;
+  color: #00000099;
+  padding: 10px 12px;
+}
+
+.table-custom:not(:first-child) {
+  border-top: 1px solid #c0c6d3;
+}
+
+.table-custom tbody tr td {
+  vertical-align: middle;
+  border: 0;
+  font-size: 14px;
+  color: #707070;
+  padding: 10px 16px;
+}
+
+.table-custom tbody tr td .iconify {
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.table-custom tbody tr td .iconify:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.table-custom tbody tr:nth-child(even) {
+  background: #e7e7e752;
+}
+
+.section-divider {
+  -webkit-box-shadow: 0px 1px 9px #0000001c;
+          box-shadow: 0px 1px 9px #0000001c;
+}
+
+@media (min-width: 768px) {
+  .section-divider {
+    padding: 35px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-divider {
+    padding: 20px 15px;
+  }
+}
 /*# sourceMappingURL=app.css.map */
