@@ -697,20 +697,19 @@ $white:#fff;
       }
 
       .photo {
-        height: 125px;
         background: #F5FCF9;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex: 1;
+        flex-basis: 100px;
 
         // background:url('../images/noise_highlight.png');
         .profile {
-          width: 138px;
-          height: 138px;
-          position: absolute;
+          width: 100%;
+          height: auto;
+          position: relative;
           border-radius: 50%;
-          left: -20px;
+          left: -12px;
           top: -20px;
 
 
@@ -720,20 +719,19 @@ $white:#fff;
           }
 
           @media(max-width:1024px) {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
           }
         }
       }
 
       .toper {
         flex: 2;
-        padding-left: 25px;
         position: relative;
 
         .impression {
           position: absolute;
-          right: 17px;
+          right: 20px;
           top: 50px;
 
           svg {
@@ -1329,10 +1327,9 @@ input::-webkit-outer-spin-button {
 
 
 
-// today changes
+// today changes 
 
 .table-custom {
-
   border: 1px solid #eaeaea;
   border-radius: 4px;
   overflow: hidden;
@@ -1404,8 +1401,9 @@ input::-webkit-outer-spin-button {
   column-gap: 20px;
 
   @media(max-width:992px) {
-     flex-direction: column;
+    flex-direction: column;
   }
+
   @media(min-width:992px) {
     padding-left: 12px;
   }
@@ -1414,8 +1412,8 @@ input::-webkit-outer-spin-button {
     position: relative;
     overflow: hidden;
     flex-basis: 32%;
-    min-height: 150px; 
-    margin-bottom: 20px; 
+    min-height: 150px;
+    margin-bottom: 20px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -1432,19 +1430,21 @@ input::-webkit-outer-spin-button {
     @media(max-width:1024px) {
       flex-basis: 31.2%;
     }
+
     @media(min-width:1280px) {
       flex-basis: 31.8%;
     }
-    
-    &:hover{
-      transform: translateY(-3px); 
-      .iconify{
+
+    &:hover {
+      transform: translateY(-3px);
+
+      .iconify {
         transform: rotate3d(1, 1, 1, 358deg) translateY(-20px);
       }
-    } 
+    }
 
     .iconify {
-      font-size:6rem;
+      font-size: 6rem;
       position: absolute;
       bottom: 0;
       opacity: 0.1;
@@ -1469,7 +1469,7 @@ input::-webkit-outer-spin-button {
       padding: 2px 12px;
       border-radius: 24px;
       border: 2px solid #fff;
-    } 
+    }
 
     &:nth-child(1) {
       background-color: orange;
