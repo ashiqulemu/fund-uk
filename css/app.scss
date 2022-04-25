@@ -705,8 +705,8 @@ $white:#fff;
 
         // background:url('../images/noise_highlight.png');
         .profile {
-          width: 100%;
-          height: auto;
+          width: 100px;
+          height: 100px;
           position: relative;
           border-radius: 50%;
           left: -12px;
@@ -1495,4 +1495,30 @@ input::-webkit-outer-spin-button {
       background-color: rgb(111, 197, 223);
     }
   }
+}
+
+
+//   faq 25-04-2022  
+
+.accordion-item { 
+  background-color: #fff;
+  border: 0;
+  border-bottom: 1px dashed rgba(0,0,0,.125);
+}
+.accordion-button:not(.collapsed) {
+  color: #020202;
+  background-color: #d5efe4; 
+  box-shadow:0 2px 48px 0 #0000000f; 
+   
+}
+.accordion-button{
+  padding: 1.2rem 1.25rem;
+  outline: 0;
+  &:hover{
+    background-color: #d5efe4; 
+  }
+}
+
+.text-primary{
+ color: #4eb879!important;
 }

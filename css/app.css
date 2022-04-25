@@ -794,8 +794,8 @@ body {
 }
 
 .funded .fund-items .box .photo .profile {
-  width: 100%;
-  height: auto;
+  width: 100px;
+  height: 100px;
   position: relative;
   border-radius: 50%;
   left: -12px;
@@ -804,8 +804,8 @@ body {
 
 @media (max-width: 375px) {
   .funded .fund-items .box .photo .profile {
-    width: 135px;
-    height: 135px;
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -1683,5 +1683,31 @@ input::-webkit-outer-spin-button {
 
 .report-section .report-box:nth-child(6) {
   background-color: #6fc5df;
+}
+
+.accordion-item {
+  background-color: #fff;
+  border: 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.125);
+}
+
+.accordion-button:not(.collapsed) {
+  color: #020202;
+  background-color: #d5efe4;
+  -webkit-box-shadow: 0 2px 48px 0 #0000000f;
+          box-shadow: 0 2px 48px 0 #0000000f;
+}
+
+.accordion-button {
+  padding: 1.2rem 1.25rem;
+  outline: 0;
+}
+
+.accordion-button:hover {
+  background-color: #d5efe4;
+}
+
+.text-primary {
+  color: #4eb879 !important;
 }
 /*# sourceMappingURL=app.css.map */
